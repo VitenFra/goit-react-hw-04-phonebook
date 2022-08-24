@@ -22,8 +22,8 @@ export const App = () => {
 
 
   const formSubmitHandler = data => {
-    if (contacts.find(contact => (data.name === contact.name))){
-      alert(data.name + ' is already in contacts' )
+    if (contacts.find(contact => (data.name.toLowerCase() === contact.name.toLowerCase()))){
+      alert(data.name + ' вже є в контактах' )
     }
     else {
       setContacts([...contacts, { name: data.name, number: data.number, id: shortid.generate() }]);
