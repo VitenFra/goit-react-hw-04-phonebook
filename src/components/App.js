@@ -59,12 +59,10 @@ export const App = () => {
       
         <h2 className="contactListTitle">Контакти</h2>
 
-        {filter !== ''?  <ContactsList
+         <ContactsList
           contacts={getFilterListContact()}
           onDeleteContact = {deleteContact}
-        />:<ContactsList
-          contacts={contacts}
-          onDeleteContact = {deleteContact}/>}
+        />
       
     
       </>
