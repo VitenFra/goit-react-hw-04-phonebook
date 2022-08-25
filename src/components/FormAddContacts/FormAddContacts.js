@@ -41,7 +41,7 @@ export const FormAddContacts = ({ onSubmit})=>{
             <>
             <form  className = {css.formAddContact} onSubmit={hendleSubmit}> 
           <label className={css.formInputTitle}>
-            Name 
+          Ім'я 
             <input
             className={css.formInput}
               type="text"
@@ -54,7 +54,7 @@ export const FormAddContacts = ({ onSubmit})=>{
                   />
           </label>
            <label className={css.formInputTitle}>
-            Number
+           Номер
             <input
             className={css.formInput}
                 type="tel"
